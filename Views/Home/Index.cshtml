@@ -1,0 +1,66 @@
+﻿@model DropDownWithSearch.Models.ViewModel.ViewModel
+@{
+    ViewData["Title"] = "Employee List";
+}
+<br />
+<br />
+
+<form method="post">
+    <div>
+        <table class="table table-borderless">
+            <tr class="table-secondary">
+                <td style="width:150px">
+                    Institution : 
+                </td>
+                <td>
+                    @Html.DropDownList("institution", new SelectList(Model.institution, "Id", "InsName"), "-Select Institution-")
+                </td>
+            </tr>
+            <tr class="table-secondary">
+                <td>
+                    Department :  
+                </td>
+                <td>
+                    @Html.DropDownList("department", new SelectList(Model.department, "Id", "DeptName"), "-Select Deprtment-")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Search" class="btn btn-primary" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        @if (Model.employeeList.Count() > 0)
+        {
+            <table class="table table-striped">
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Department</th>
+                    <th>Institution</th>
+                </tr>
+
+                @foreach (var item in Model.employeeList)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(e => item.EmpName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(e => item.InsName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(e => item.DeptName)
+                        </td>
+                    </tr>
+
+                }
+            </table>
+        }
+        else
+        {
+            <p>No employee exist...!!!</p>
+        }
+    </div>
+</form>
