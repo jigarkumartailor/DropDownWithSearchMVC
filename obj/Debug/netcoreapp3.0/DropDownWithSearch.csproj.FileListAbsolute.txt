@@ -80,5 +80,3 @@ E:\Demo\DropdownWithSearch\DropDownWithSearch\obj\Debug\netcoreapp3.0\Razor\Book
 E:\Demo\DropdownWithSearch\DropDownWithSearch\obj\Debug\netcoreapp3.0\Razor\BookListRazor\BookListRazor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 E:\Demo\DropdownWithSearch\DropDownWithSearch\obj\Debug\netcoreapp3.0\Razor\BookListRazor\BookListRazor\Pages\_ViewImports.cshtml.g.cs
 E:\Demo\DropdownWithSearch\DropDownWithSearch\obj\Debug\netcoreapp3.0\Razor\BookListRazor\BookListRazor\Pages\_ViewStart.cshtml.g.cs
-E:\Demo\DropdownWithSearch\DropDownWithSearch\obj\Debug\netcoreapp3.0\DropDownWithSearch.csproj.CoreCompileInputs.cache
-E:\Demo\DropdownWithSearch\DropDownWithSearch\obj\Debug\netcoreapp3.0\DropDownWithSearch.MvcApplicationPartsAssemblyInfo.cache
